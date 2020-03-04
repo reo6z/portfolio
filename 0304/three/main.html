@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>THREE平衡印象保養</title>
+<link href="css/three.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/web.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="http://active.fashionguide.com.tw/resource/2015/newproducts/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="http://active.fashionguide.com.tw/resource/2015/newproducts/css/jquery-ui.css">
+<script src="https://active.fashionguide.com.tw/resource/2015/newproducts/js/jquery-ui.js"></script>
+<script src="js/formCheck.js" type="text/javascript"></script>
+
+<script>
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/iframe_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('mov_player', {
+      width: '750',
+      height: '422',
+      videoId: 'EFas91n7VdQ',
+      playerVars: { 'autoplay': 1, 'rel': 0 },
+      events: {
+        'onReady': onPlayerReady,
+        'onStateChange': onPlayerStateChange
+      }
+    });
+  }
+  function onPlayerReady(event) {
+    event.target.playVideo();
+  }
+
+  var done = false;
+  function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+      player.mute();  
+      done = true;
+    }
+  }
+</script>
+
+<script>
+/*
+ * 第一步：JS：isShowColumn 填入 true/false  
+ * 第二步：JS：有櫃點櫃點
+ * 第三步：HTML：填入專案 dt
+ * 第四步：HTML：填入專案 pd_name
+ */
+function Initializer()
+{
+  this.config = {
+    // 設定選單中：true 就是有該項目， false 就是沒有該項目
+    "isShowColumn" : {
+      "name"      : true,
+      "birthday"  : false,
+      "phone"     : true,
+      "email"     : true,
+      "shop"      : false,
+      "agreement" : true,
+    },
+
+    // 櫃點內容
+    /* Example
+    {
+      "area"  : "地點1", 
+      "shops" : ["地點1 對應的櫃點1", "地點1 對應的櫃點2", "地點1 對應的櫃點3"]
+    },
+     */
+
+    "stores" : 
+    [
+      {
+        "area"  : "台北", 
+        "shops" : ["信義A8","忠孝SOGO", "新光三越站前店"]
+      },
+      {
+        "area"  : "桃園", 
+        "shops" : ["SOGO中壢店"]
+      },
+      {
+        "area"  : "台中", 
+        "shops" : ["新光三越中港店"]
+      },
+        
+    ]
+  };
+}
+</script>
+
+</head>
+<body>
+    <div id="newitem">
+		<div id="back_font">
+			<h1>THREE平衡印象保養</h1>
+			THREE平衡印象保養 印象保養。美的黃金守則
+      從日常保養打造美顏印象
+
+      THREE七大「印象保養」神器
+      讓你從每日保養輕鬆養成黃金比例美人臉
+      以獨一無二的臉部正中線為主軸THREE平衡印象保養讓你輕鬆擁有亮眼美人臉
+      不開刀不侵入THREE用純自然的力量，從每日保養，讓所有人擁有「印象美顏」
+
+      讓世界看見你不一樣的眼神，平衡亮眸系列
+      從眼睛開始的「平衡亮眸保養」
+      眼睛是最重要的五官，人的資訊接收百分之八十都來自於它，日常生活的壓力、操勞造成眼睛疲勞、黯沉等問題，眼皮薄嫩敏感THREE提倡避開眼周但很有效的保養讓你從日常保養中，找回曾經如嬰兒般純淨又楚楚動人的眼眸
+
+      平衡亮眸凝露
+      植物精油、植物油-滋養油層/植物純露-保濕水層/完美滋潤眼周，滲透角質層
+
+      1.取適量塗抹眼周，從眼睛下方以食指、中指、無名指往眼尾擦去
+      2.在太陽穴停留指壓，之後下移再撫滑3次
+      3.眼睛上方用中指輕壓眼周穴位後與剛剛的手法一樣。
+      如果有眉間皺紋用腹推抹讓凝霜深入肌膚。
+      用有機化妝棉沾取，從下眼頭開始往眼尾、太陽穴的方向擦去，輕輕按壓層疊式擦法，眼睛上方跟眉毛中間也用一樣的手法
+      當眼睛真的過度疲勞需要來點眼膜的時後，將化妝棉展開沾取，敷在眼睛的上下方，徹底完美包覆並舒緩眼部緊繃讓你擁有明晰緊緻的雙眸。
+
+      平衡亮眸凝霜
+      奢華植物成分的極致滋養眼霜，瞬間融入肌膚、深入滲透不油膩，掃除疲憊感，營造出截然不同的臉部印象
+
+      凸顯鼻樑立體光采，直達平衡對稱的美顏印象
+      針對性的局部重點保養，改變整體印象
+      前所未有的鼻子重點保養，和不只有保濕得唇部保養，針對臉的正中線去微調「鼻」「唇」，這也是吸收精油最有效的部位，用THREE及獨創手法讓你的臉部左右對稱擁有黃金比例美人臉。
+
+      平衡Y Line亮鼻精華
+      100%天然精油，是針對鼻子開發的美容精華液，質地柔滑延展，最適合用來按摩
+      將精華液放在手心溫熱，用無名指從眉骨開始到鼻頭按摩一分鐘，鼻頭用畫圈的方式按摩，用指腹對稱按摩左右1-3分鐘完美吸收
+      從鼻翼往眉頭方向以描畫大Y字般按摩，即可從臉部中心舒緩緊繃，凸顯鼻樑立體光采印象
+      *記得按摩時要深呼吸將味道吸入，也要避免力道過大傷到鼻子喔
+
+      超強美唇保養
+      美麗的唇對男人來說是致命的性感
+
+      平衡晶唇露
+      由於擦在嘴唇上的東西特別容易吃下去所以THREE特別針對嘴巴研發天然成分的唇部精華露；可以當成拂拭口紅或污漬的潔膚凝露也是唇部保養的前導精華，保養晶露使用也可以，一瓶多功能。
+
+      清潔
+      1.將紙巾摺成小方塊從唇中央往左右兩側擦，上唇→下唇然後撫塗在嘴唇周圍即可
+      當前導液或保養精露擦口紅前擦
+      1.將前導液塗抹紙巾輕壓沾滿下唇再撫滑下唇輪廓
+      2.上唇從中央開始往兩側塗抹在塗描唇輪廓就完成
+
+      平衡淨透唇精華(暗沉用)/平衡紅潤唇精華(蒼白用)
+      唇部專用美容精華油，從根本改善唇部色調，並擁有澎潤立體感，讓妳由內而外擁有紅潤淨透的氣色美唇
+
+      1.用棉花棒取適量由外往內塗抹順著唇縱紋
+      2.左右滾動塗抹整個嘴唇
+
+      淨透&紅潤的選擇題!!!色暗沉感覺有就用淨透型，嘴唇蒼白、乾燥、就要用紅潤型~這兩瓶精華油可依照需求去交替使用~記得力道不要太重，完美打造健康美唇。
+
+      左右對稱完美平衡面膜
+      平衡緊緻臉部輪廓，改變臉部整體印象的面膜
+
+      平衡緊緻面膜
+      可左右擴展的伸縮素材，完美服貼肌膚的局部面膜；兩側左右對稱敷膜，即可養成緊緻立體、膚質淨透的印象美人顏。純棉面膜比水面膜更薄更服貼，延展性佳又有彈性，一開始連續用5天待臉部習慣定型後，一周使用1-2次
+
+      1.貼在太陽穴往下敷上
+      2.循環不良的問題可以從耳朵後方往臉際輪廓敷
+      3.臉頰水腫就從耳下往下巴中間敷
+      4.整體水腫、疲勞就貼在脖子往鎖骨方向
+      最重要就是要左右對稱，而且敷到全乾是正常的喔，就讓肌膚好好吸收營養。
+
+      用敷的就有的小V臉
+      即日起~2016/11/17-2016/12/31，完整填寫資料，系統將自動發送兌換簡訊至您所留下的手機號碼，您可憑簡訊至您預約的THREE櫃點體驗15-30分鐘的局部保養療程。每日名額有限，額滿為止
+      *每人限體驗一次
+		</div>
+
+		<div id="wrapper">
+
+			<!--主視覺start-->
+			<div id="vision" class="block">
+				<div id="vision_img" class="block_back"></div>
+				<div id="black"></div>
+				<div id="kv"><img src="images/index_01.jpg" alt="THREE平衡印象保養" /></div>
+				<div id="logo"><img src="images/index_02.png" alt="THREE平衡印象保養" /></div>
+				<div id="title"><img src="images/index_03.png" alt="THREE平衡印象保養" /></div>
+				<div id="word"><img src="images/index_04.png" alt="THREE平衡印象保養" /></div>
+				<div id="icon"><a href="#event" class="goto"><img src="images/index_icon01.png" alt="THREE平衡印象保養" /></a></div>
+			</div>
+			<!--主視覺end-->
+
+			<div id="family">
+				<div class="family01"><img src="images/pro_01.png" alt="THREE平衡印象保養" /></div>
+        <div class="family02"><img src="images/pro_02.png" alt="THREE平衡印象保養" /></div>
+        <div class="family03"><img src="images/pro_03.png" alt="THREE平衡印象保養" /></div>
+        <div class="family04"><img src="images/pro_04.png" alt="THREE平衡印象保養" /></div>
+        <div class="family05"><img src="images/pro_05.png" alt="THREE平衡印象保養" /></div>
+        <div class="family06"><img src="images/pro_06.png" alt="THREE平衡印象保養" /></div>
+        <div class="family07"><img src="images/pro_07.png" alt="THREE平衡印象保養" /></div>
+			</div>
+
+			<div id="intro">
+				
+        <ul class="tabs">
+          <li class="n01"><a></a></li>
+          <li class="n02"><a></a></li>
+          <li class="n03"><a></a></li>
+          <li class="n04"><a></a></li>
+        </ul>
+
+        <div class="tab_container">
+          <!--nav01 start-->
+          <div id="tab1" class="tab_content">
+            <div id="intro_pop1" style="visibility: hidden; opacity: 0; top: 200px;"><img src="images/popup_01-1.png" alt="THREE平衡印象保養"></div>
+            <div id="intro_pop2" style="visibility: hidden; opacity: 0; top: 500px;"><img src="images/popup_01-2.png" alt="THREE平衡印象保養"></div>
+            <div id="intro_ctag1"></div>
+            <div id="intro_ctag2"></div>
+            <img src="images/index_06-1.jpg" alt="THREE平衡印象保養" />
+          </div>
+          <!--nav01 end-->
+
+          <!--nav02 start-->
+          <div id="tab2" class="tab_content">
+            <div id="intro_pop3" style="visibility: hidden; opacity: 0; top: 200px;"><img src="images/popup_02-1.png" alt="THREE平衡印象保養"></div>
+            <div id="intro_ctag3"></div>
+            <img src="images/index_06-2.jpg" alt="THREE平衡印象保養" />
+          </div>
+          <!--nav02 end-->
+
+          <!--nav03 start-->
+          <div id="tab3" class="tab_content">
+            <div id="intro_pop4" style="visibility: hidden; opacity: 0; top: 30px;"><img src="images/popup_03-1.png" alt="THREE平衡印象保養"></div>
+            <div id="intro_pop5" style="visibility: hidden; opacity: 0; top: 460px;"><img src="images/popup_03-2.png" alt="THREE平衡印象保養"></div>
+            <div id="intro_ctag4"></div>
+            <div id="intro_ctag5"></div>
+            <img src="images/index_06-3.jpg" alt="THREE平衡印象保養" />
+          </div>
+          <!--nav03 end-->
+
+          <!--nav04 start-->
+          <div id="tab4" class="tab_content">
+            <div id="intro_pop6" style="visibility: hidden; opacity: 0; top: 200px;"><img src="images/popup_04-1.png" alt="THREE平衡印象保養"></div>
+            <div id="intro_ctag6"></div>
+            <img src="images/index_06-4.jpg" alt="THREE平衡印象保養" />
+          </div>
+          <!--nav04 end-->
+          
+        </div>
+
+			</div>
+
+			<div id="event">
+				<div id="msg">
+			    <form id="formPost" method="POST" action="http://newproducts.fashionguide.com.tw/p/user_info.php">
+
+		        <!-- dt -->
+		        <input name="dt" value="160908" type="hidden"/>
+		        <!-- pd_name -->
+		        <input name="pd_name" value="esteelauder_stick" type="hidden"/>
+
+		        <input type="text" name="name" maxlength="4" class="msg_form" placeholder="限4個中文字" style="margin-left:100px;"/>
+		        <input type="text" name="phone" class="msg_form" maxlength="10" placeholder="限10碼" style="margin-left:110px;"/>
+
+            <select name="shop" class="msg_form" style="width:202px; margin-left:100px;">
+              <option value=""></option>
+            </select>
+
+		        <select name="date" class="msg_form" style="width:202px; margin-left:110px;">
+		          <option value=""></option>
+		        </select>
+
+            <input type="text" name="email" class="msg_form" style="width:517px; margin-left:100px;"/>
+		        
+		        <input type="checkbox" name="agreement" value="" class="msg_check" />
+		        <div class="msg_icon">
+		          <img src="images/index_icon03.gif" id="submitImage" style="cursor: pointer" />
+		        </div>
+
+			    </form>
+				</div>
+			</div>
+
+      <div class="content"><a href="https://www.facebook.com/THREETaiwan/" target="_blank"><img src="images/index_08.jpg" alt="THREE平衡印象保養" /></div>
+
+		</div>
+	</div>
+</body>
+</html>

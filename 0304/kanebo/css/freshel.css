@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url("reset.css");
+/* CSS Document */
+
+#newitem { position:relative; width:950px; margin:0 auto; }
+#back_font{ word-wrap:break-word; word-break:break-all; position:absolute;left:-9999px; width:500px; padding-top:20px;}
+#wrapper{ position:relative; left: 0px; top: 0px; z-index: 999; }
+
+.block{ width:950px; position:relative; }
+.block_back { width:950px; position:absolute; left:0px; top:0px;}
+
+#vision{ width:950px; height:570px; overflow:hidden;}
+#vision_img{ height:570px; }
+#black{ background:#fff; position:absolute; width:950px; height:570px; right:0px; top:0px;}
+#bar{ position:absolute; width:950px; height:90px; left:0px; top:480px; display:none;}
+#product01{ position:absolute; width:240px; height:230px; left:210px; top:235px; display:none;}
+#product02{ position:absolute; width:270px; height:290px; left:505px; top:175px; display:none;}
+#title{ position:absolute; width:330px; height:110px; left:310px; top:50px; display:none;}
+
+.content{ width:950px; height: 700px;}
+
+#mov{ position:relative; background-image:url(../images/index_06.jpg); background-repeat:no-repeat; height:980px;}
+#mov_player{ position:absolute; width:400px; height:225px; left:455px; top:260px;}
+
+#excellent{ position:relative; background-image:url(../images/index_07.jpg); background-repeat:no-repeat; height:660px;}
+.excellent_icon01{ position:absolute; width:290px; height:33px; left:365px; top:335px;}
+.excellent_icon02{ position:absolute; width:290px; height:33px; left:316px; top:595px;}
+
+/*model*/
+#model { position:relative; background-image:url(../images/index_08.jpg); background-repeat:no-repeat; height:720px;}
+
+.icon01 { display: inline-block; position:absolute; left:127px; top:198px; width:275px; height:275px; background-image:url(../images/model_01-1.png);}
+.icon01 span { position: absolute; top:0px; left:0px; background-image:url(../images/model_01-2.png); opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition: opacity 0.5s; filter:alpha(opacity=0); width:275px; height:275px;}
+.icon01:hover span {opacity: 1; filter:alpha(opacity=100);}
+
+.icon02 { display: inline-block; position:absolute; left:588px; top:69px; width:275px; height:275px; background-image:url(../images/model_02-1.png);}
+.icon02 span { position: absolute; top:0px; left:0px; background-image:url(../images/model_02-2.png); opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition: opacity 0.5s; filter:alpha(opacity=0); width:275px; height:275px;}
+.icon02:hover span {opacity: 1; filter:alpha(opacity=100);}
+
+.icon03 { display: inline-block; position:absolute; left:417px; top:261px; width:220px; height:220px; background-image:url(../images/model_03-1.png);}
+.icon03 span { position: absolute; top:0px; left:0px; background-image:url(../images/model_03-2.png); opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition: opacity 0.5s; filter:alpha(opacity=0); width:220px; height:220px;}
+.icon03:hover span {opacity: 1; filter:alpha(opacity=100);}
+
+.icon04 { display: inline-block; position:absolute; left:324px; top:462px; width:220px; height:220px; background-image:url(../images/model_04-1.png);}
+.icon04 span { position: absolute; top:0px; left:0px; background-image:url(../images/model_04-2.png); opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition: opacity 0.5s; filter:alpha(opacity=0); width:220px; height:220px;}
+.icon04:hover span {opacity: 1; filter:alpha(opacity=100);}
+
+.icon05 { display: inline-block; position:absolute; left:624px; top:382px; width:220px; height:220px; background-image:url(../images/model_05-1.png);}
+.icon05 span { position: absolute; top:0px; left:0px; background-image:url(../images/model_05-2.png); opacity: 0; -webkit-transition: opacity 0.5s; -moz-transition:opacity 0.5s; -o-transition: opacity 0.5s; filter:alpha(opacity=0); width:220px; height:220px;}
+.icon05:hover span {opacity: 1; filter:alpha(opacity=100);}
+
+
+#event{ position:relative; background-image:url(../images/index_10.jpg); background-repeat:no-repeat; height:310px;}
+.event_icon01{ position:absolute; width:195px; height:45px; left:399px; top:219px;}
+.event_icon02{ position:absolute; width:195px; height:45px; left:599px; top:219px;}
+
+img { border:0;}
+area{ outline:none;}
