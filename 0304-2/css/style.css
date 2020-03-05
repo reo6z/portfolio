@@ -1,0 +1,48 @@
+@charset "UTF-8";
+@import url("reset.css");
+
+body{ font-family:"Microsoft JhengHei"; font-size: 1em; word-wrap: break-word; word-break: break-all; text-align: center; }
+
+*{-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+img{ border:0; display:block; }
+area{ outline:none; }
+a{ text-decoration: none; color: #fff; }
+
+#wrapper{ width: 100%; }
+.header{ padding: 5% 0; }
+h1{ position: relative; font-size: 3em; /*border: 1px #000 solid;*/ }
+h1:after{ content: ''; position: absolute; top: 50%; left: 50%; width: 15%; transform: translate(-50%, -50%); height: 15px; background-color: rgba(255, 255, 0, 0.6); }
+h2{ font-size: 2em; }
+.main{}
+.main ul{ display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 5%; }
+.main ul li{ width: 30%; max-width: 490px; margin: 2% 1%; }
+.main ul li img{ width: 100%; margin-bottom: 2%; cursor: pointer; }
+.main ul li p{ font-weight: bold; }
+.footer{ margin-top: 5%; padding: 1%; background-color: #000; color: #fff; }
+
+/*overlay*/
+.overlay { position: fixed; top: 0; bottom: 110%; left: 0; right: 0; width: 100%; z-index: 999; opacity: 0; background: rgba(0,0,0,0.7); transition: opacity 200ms linear, bottom 0s linear 200ms; overflow-y: scroll; }
+.overlay-open { bottom: 0; opacity: 1; transition: opacity 200ms linear, bottom 0s linear; }
+.overlay-view { overflow: hidden; }
+.overlay-trigger { text-decoration: none; transition: all 200ms linear; }
+.overlay-trigger:hover { background: #000; }
+/*overlay inner*/
+.popup{ position: relative; margin: 5% auto; width: 100%; max-width: 1280px; }
+.popup img{ margin: auto; }
+.popup_close{ position: absolute; top: 20px; right: 20px; cursor: pointer; }
+
+
+/*-------------------mobile----------------------*/
+@media only screen and (max-width:768px) {
+	h1:after{ width: 50%; }
+	.main ul li{ width: 100%; margin: 3% auto; }
+	.popup{  margin: 0 auto; }
+	.popup img{ width: 100%; }
+	.popup_close{ width: 10%; }
+	.footer{ padding: 5%; }
+}
