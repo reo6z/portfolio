@@ -5,167 +5,81 @@ $(function(){
     $("#top").scrollToTop();
 });
 
-//overlay
-function openNav1() {
-    document.getElementById("myNav1").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+/*overlay*/
+( function($) {
+  /**
+   * Our trigger event for opening the overlay. This class
+   * should exist on the overlay trigger, as well as an
+   * attribute (data-overlay) to adentify the overlay to open.
+  */
+  $('.overlay-trigger').on('click', function(event) {
+    event.preventDefault();
 
-function openNav2() {
-    document.getElementById("myNav2").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    /**
+     * Set the overlay variable based on the data provided
+     * by the overlay trigger.
+     */
+    var overlay = $( this ).data('overlay');
 
-function openNav3() {
-    document.getElementById("myNav3").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    /**
+     * If the overlay variable is not defined, give a message
+     * and return.
+    */
+    if (!overlay) {
+      console.log('You must provide the overlay id in the trigger. (data-overlay="overlay-id").');
+      return;
+    }
 
-function openNav4() {
-    document.getElementById("myNav4").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    /**
+     * If we've made it this far, we should have the data
+     * needed to open a overlay. Here we set the id variable
+     * based on overlay variable.
+     */
+    var id = '#' + overlay;
 
-function openNav5() {
-    document.getElementById("myNav5").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    /**
+     * Let's open up the overlay and prevent the body from
+     * scrolling, both by adding a simple class. The rest
+     * is handled by CSS (awesome).
+     */
+    $(id).addClass('overlay-open');
+    $('body').addClass('overlay-view');
 
-function openNav6() {
-    document.getElementById("myNav6").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    /**
+     * When the overlay outer wrapper or `overlay-close`
+     * triger is clicked, lets remove the classes from
+     * the current overlay and body. Removal of these
+     * classes restores the current state of the user
+     * experience. Again, all handled by CSS (awesome).
+     */
+    $(id).on('click', function(event) {
+      // Verify that only the outer wrapper was clicked.
+      if (event.target.id == overlay ) {
+        $(id).removeClass('overlay-open');
+        $('body').removeClass('overlay-view');
+      }
+    });
 
-function openNav7() {
-    document.getElementById("myNav7").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    /**
+     * Closes the overlay when the esc key is pressed. See
+     * comment above on closing the overlay for more info
+     * on how this is accomplished.
+     */
+    $(document).keyup(function(event) {
+      // Verify that the esc key was pressed.
+      if (event.keyCode == 27) {
+        $(id).removeClass('overlay-open');
+        $('body').removeClass('overlay-view');
+      }
+    });
 
-function openNav8() {
-    document.getElementById("myNav8").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
+    $(".popup_close").click(function(){
+        $(id).removeClass('overlay-open');
+        $('body').removeClass('overlay-view');
+    });
 
-function openNav9() {
-    document.getElementById("myNav9").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav10() {
-    document.getElementById("myNav10").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav11() {
-    document.getElementById("myNav11").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav12() {
-    document.getElementById("myNav12").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav13() {
-    document.getElementById("myNav13").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav14() {
-    document.getElementById("myNav14").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav15() {
-    document.getElementById("myNav15").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-function openNav16() {
-    document.getElementById("myNav16").style.height = "100%";
-    $('body').css('overflow-y', 'hidden');
-}
-
-
-function closeNav1() {
-    document.getElementById("myNav1").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav2() {
-    document.getElementById("myNav2").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav3() {
-    document.getElementById("myNav3").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav4() {
-    document.getElementById("myNav4").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav5() {
-    document.getElementById("myNav5").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav6() {
-    document.getElementById("myNav6").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav7() {
-    document.getElementById("myNav7").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav8() {
-    document.getElementById("myNav8").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav9() {
-    document.getElementById("myNav9").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav10() {
-    document.getElementById("myNav10").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav11() {
-    document.getElementById("myNav11").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav12() {
-    document.getElementById("myNav12").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav13() {
-    document.getElementById("myNav13").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav14() {
-    document.getElementById("myNav14").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav15() {
-    document.getElementById("myNav15").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
-
-function closeNav16() {
-    document.getElementById("myNav16").style.height = "0%";
-    $('body').css('overflow-y', 'scroll');
-}
+  });
+}) (jQuery);
 
 // animations Scroll
 $(function(){
