@@ -36,6 +36,7 @@ ol p{ margin-top: 2%; font-size: 0.8em; }
 .kv{ position: relative; height: 100vh; text-align: center; background: url(../images/index_kv.jpg) no-repeat; background-size: auto 100%; background-color: #f7acb1; background-position: center; }
 .kv-title, .intro-L-title{ position: absolute; left: 50%; transform: translate(-50%, -50%); width: 100%; }
 .kv-title{ top: 48%; }
+.kv-title, .kv-btn{ display: none; }
 .intro-L-title{ top: 65%; }
 .kv-title img, .intro-L-title img{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90%; max-width: 903px; z-index: -1; }
 .intro-L-title h1{ font-size: 3.2em; }

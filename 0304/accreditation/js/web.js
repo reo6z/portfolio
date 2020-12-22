@@ -126,3 +126,10 @@ $(function(){
     $window.trigger('scroll');
 
 })
+
+$(function(){
+
+  $(".kv").delay(300).fadeIn(600);
+  $(".kv-title").delay(300).fadeIn(600);
+  $(".kv-btn").delay(600).fadeIn(600);
+})
